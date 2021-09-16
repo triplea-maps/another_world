@@ -1,0 +1,614 @@
+Another World 3.7.0 - Using custom map of Arnay
+		<br>
+		<br>	<b>UNITS</b>
+		<br>	When units are displayed in the production window or the unit help screens, the game engine does not consult support attachments or terrain effects.  Some other special features of units are not listed in these screens either.  Since Ascending Powers makes extensive use of these things, the descriptions shown here should be used to get a complete and accurate list.  All units are the same from one nation to another.
+		<br>
+		<br>	<b>Ground Units</b>
+		<br>
+		<br>	<b>Population </b>
+		<br>	<b>Cost: 6 </b>(Are generated automatically each turn, one for each land territory and one for each city level you own.)
+		<br>	<b>Attack: 0 </b>
+		<br>	<b>Defend: 0 </b>(capturable)
+		<br>	<b>Move: 1 </b>
+		<br>	<b>Transport Cost: 1 </b>- On sea by transport ship or merchant ship.  Can be transported by air by helicopters and transport planes.
+		<br>	<b>Placement: </b>Any land territory owned at the start of the turn, up to 5 per territory.
+		<br>	<b>Special: </b>When located in your capital, can be converted to 2 PUs each.  When located in a foreign capital, may be transferred to that player.  Structures such as city levels, factory levels, airfields, harbours, forts, fortresses, bunkers, and nuclear facilities require the presence of population units and consume them on placement.  Population can repair damage on structures.  Population can be strategic bombed and are killed when receiving 1 hit.
+		<br>
+		<br>	<b>Militia </b>
+		<br>	<b>Cost: 4 </b>
+		<br>	<b>Attack: 1 </b>(-1 in Mountains, Jungles, Desert, or Arctic terrain. +1 with General.  -1 vs Fort, Fortress, or Bunker.)
+		<br>	<b>Defend: 1 </b>(+1 in Mountains & Jungles, -1 in Desert or Arctic terrain.  +1 with General.  +1 from fort, fortress, or bunker, up to the maximum number of units the fortification can boost.)
+		<br>	<b>Move: 1 </b>
+		<br>	<b>Transport Cost: 2 </b>- On sea by transport ship or merchant ship.  Cannot be transported by air.
+		<br>	<b>Placement: </b>Any land territory owned at the start of the turn, up to 5 per territory.
+		<br>
+		<br>	<b>Infantry </b>
+		<br>	<b>Cost: 6 </b>
+		<br>	<b>Attack: 2 </b>(-1 in Mountains, Jungles, Desert, or Arctic terrain. +1 with General.  -1 vs Fort, Fortress, or Bunker.  +1 if paired with artillery, hvy_artillery, helicopter or tactical_bomber)
+		<br>	<b>Defend: 3 </b>(+1 in Mountains & Jungles, -1 in Desert terrain.  +1 with General.  +1 from fort, fortress, or bunker, up to the maximum number of units the fortification can boost.)
+		<br>	<b>Move: 1 </b>
+		<br>	<b>Transport Cost: 3 </b>- On sea by transport ship.  Can be transported by air by helicopters or transport planes.
+		<br>	<b>Placement: </b>Any land territory owned at the start of the turn containing a city of any level.
+		<br>
+		<br>	<b>Marine </b>
+		<br>	<b>Cost: 9 </b>
+		<br>	<b>Attack: 3 </b>(+1 in Jungles. +1 with General.  +1 if attacking amphibuously.  -1 vs Fort, Fortress, or Bunker.  +1 if paired with artillery, hvy_artillery, helicopter or tactical_bomber)
+		<br>	<b>Defend: 3 </b>(+2 in Mountains & Jungles.  +1 with General.  +1 from fort, fortress, or bunker, up to the maximum number of units the fortification can boost.)
+		<br>	<b>Move: 1 </b>
+		<br>	<b>Transport Cost: 2 </b>- On sea by transport ship or merchant ship.  Can be transported by air by helicopters or transport planes.
+		<br>	<b>Placement: </b>Any land territory owned at the start of the turn containing a city of any level.
+		<br>
+		<br>	<b>Halftrack </b>
+		<br>	<b>Cost: 11 </b>
+		<br>	<b>Attack: 2 </b>(-1 in Mountains, Jungles, & Arctic; +1 in Desert.  +1 with General.  -1 vs Fort, Fortress, or Bunker.  +1 if paired with artillery, hvy_artillery, helicopter or tactical_bomber)
+		<br>	<b>Defend: 3 </b>(-1 in Mountains, Jungles, & Arctic; +1 in Desert.  +1 with General.)
+		<br>	<b>Move: 2 </b>
+		<br>	<b>Transport Cost: 4 </b>- On sea by transport ship.  Cannot be transported by air.
+		<br>	<b>Placement: </b>Any land territory owned at the start of the turn containing a factory of any level.
+		<br>	<b>Special: </b>Can Blitz.
+		<br>
+		<br>	<b>Mech_Infantry </b>
+		<br>	<b>Cost: 15 </b>
+		<br>	<b>Attack: 3 </b>(-1 in Mountains, Jungles, & Arctic; +1 in Desert.  +1 with General.  -1 vs Fort, Fortress, or Bunker.  +1 if paired with artillery, hvy_artillery, helicopter or tactical_bomber)
+		<br>	<b>Defend: 4 </b>(-1 in Mountains, Jungles, & Arctic; +1 in Desert.  +1 with General.)
+		<br>	<b>Move: 2 </b>
+		<br>	<b>Transport Cost: 5 </b>- On sea by transport ship.  Cannot be transported by air.
+		<br>	<b>Placement: </b>Any land territory owned at the start of the turn containing a factory of any level.
+		<br>	<b>Special: </b>Can Blitz.  Is land transport.
+		<br>
+		<br>	<b>Mobile_Infantry </b>
+		<br>	<b>Cost: 16 </b>
+		<br>	<b>Attack: 2 </b>(-1 in Mountains, Jungles, & Arctic; +1 in Desert.  +1 with General.  -1 vs Fort, Fortress, or Bunker.  +1 if paired with artillery, hvy_artillery, helicopter or tactical_bomber)
+		<br>	<b>Defend: 3 </b>(-1 in Mountains, Jungles, & Arctic; +1 in Desert.  +1 with General.)
+		<br>	<b>Move: 3 </b>
+		<br>	<b>Transport Cost: 4 </b>- On sea by transport ship.  Cannot be transported by air.
+		<br>	<b>Placement: </b>Any land territory owned at the start of the turn containing a factory of any level.
+		<br>	<b>Special: </b>Can Blitz.  Is land transport.
+		<br>
+		<br>	<b>Lt_Cavalry </b>
+		<br>	<b>Cost: 10 </b>
+		<br>	<b>Attack: 2 </b>(-1 in Mountains & Jungles, -2 in Desert & Arctic.  +1 with General.  -1 vs Fort, Fortress, or Bunker.  +1 if paired with artillery, hvy_artillery, helicopter or tactical_bomber)
+		<br>	<b>Defend: 2 </b>(-1 in Mountains & Jungles, -2 in Desert & Arctic.  +1 with General.)
+		<br>	<b>Move: 3 </b>
+		<br>	<b>Transport Cost: 4 </b>- On sea by transport ship.  Cannot be transported by air.
+		<br>	<b>Placement: </b>Any land territory owned at the start of the turn containing a city of any level.
+		<br>	<b>Special: </b>Can Blitz.
+		<br>
+		<br>	<b>Cavalry </b>
+		<br>	<b>Cost: 13 </b>
+		<br>	<b>Attack: 3 </b>(-1 in Mountains & Jungles, -2 in Desert & Arctic.  +1 with General.  -1 vs Fort, Fortress, or Bunker.  +1 if paired with artillery, hvy_artillery, helicopter or tactical_bomber)
+		<br>	<b>Defend: 2 </b>(-1 in Mountains & Jungles, -2 in Desert & Arctic.  +1 with General.)
+		<br>	<b>Move: 2 </b>
+		<br>	<b>Transport Cost: 4 </b>- On sea by transport ship.  Cannot be transported by air.
+		<br>	<b>Placement: </b>Any land territory owned at the start of the turn containing a city above level 1.
+		<br>	<b>Special: </b>Can Blitz.
+		<br>
+		<br>	<b>Hvy_Cavalry </b>
+		<br>	<b>Cost: 15 </b>
+		<br>	<b>Attack: 4 </b>(-1 in Mountains & Jungles, -2 in Desert & Arctic.  +1 with General.  -1 vs Fort, Fortress, or Bunker.  +1 if paired with artillery, hvy_artillery, helicopter or tactical_bomber)
+		<br>	<b>Defend: 3 </b>(-1 in Mountains & Jungles, -2 in Desert & Arctic.  +1 with General.)
+		<br>	<b>Move: 2 </b>
+		<br>	<b>Transport Cost: 5 </b>- On sea by transport ship.  Cannot be transported by air.
+		<br>	<b>Placement: </b>Any land territory owned at the start of the turn containing a city above level 2, up to 3 times the city level, +3 more if there is a factory level >= the city level.
+		<br>	<b>Special: </b>Can Blitz.
+		<br>
+		<br>	<b>Artillery </b>
+		<br>	<b>Cost: 10 </b>
+		<br>	<b>Attack: 4 </b>(+1 with General.)
+		<br>	<b>Defend: 4 </b>(+1 with General.  +1 with Fort, Fortress, or Bunker)
+		<br>	<b>Move: 1 </b>
+		<br>	<b>Transport Cost: 4 </b>- On sea by transport ship.  Cannot be transported by air.
+		<br>	<b>Placement: </b>Any land territory owned at the start of the turn containing a factory of any level.
+		<br>	<b>Special: </b>Gives +1 to one supportable unit when attacking.  (Supportable units are infantry, marines, halftracks, mech_infantry, mobile_infantry, lt_cavalry, cavalry, & hvy_cavalry).
+		<br>
+		<br>	<b>Hvy_artillery </b>
+		<br>	<b>Cost: 14 </b>
+		<br>	<b>Attack: 5 </b>(+1 with General.)
+		<br>	<b>Defend: 5 </b>(+1 with General.  +1 with Fort, Fortress, or Bunker)
+		<br>	<b>Move: 1 </b>
+		<br>	<b>Transport Cost: 5 </b>- On sea by transport ship.  Cannot be transported by air.
+		<br>	<b>Placement: </b>Any land territory owned at the start of the turn containing a factory above level 1.
+		<br>	<b>Special: </b>Gives +1 to two supportable units when attacking.  (Supportable units are infantry, marines, halftracks, mech_infantry, mobile_infantry, lt_cavalry, cavalry, & hvy_cavalry).
+		<br>
+		<br>	<b>Lt_Armour </b>
+		<br>	<b>Cost: 18 </b>
+		<br>	<b>Attack: 5 </b>(-1 in Mountains & Jungles, & Arctic.  +1 in Desert.  +1 with General.  -1 vs Fort, Fortress, or Bunker.)
+		<br>	<b>Defend: 5 </b>(-1 in Mountains & Jungles, & Arctic.  +1 in Desert.  +1 with General.)
+		<br>	<b>Move: 3 </b>
+		<br>	<b>Transport Cost: 5 </b>- On sea by transport ship.  Cannot be transported by air.
+		<br>	<b>Placement: </b>Any land territory owned at the start of the turn containing a factory above level 1.
+		<br>	<b>Special: </b>Can Blitz.
+		<br>
+		<br>	<b>Armour </b>
+		<br>	<b>Cost: 23 </b>
+		<br>	<b>Attack: 6 </b>(-2 in Mountains Arctic.  -1 in Jungles.  +1 in Desert.  +1 with General.  -1 vs Fort, Fortress, or Bunker.)
+		<br>	<b>Defend: 6 </b>(-1 in Mountains, Jungles & Arctic.  +1 in Desert.  +1 with General.)
+		<br>	<b>Move: 2 </b>
+		<br>	<b>Transport Cost: 5 </b>- On sea by transport ship.  Cannot be transported by air.
+		<br>	<b>Placement: </b>Any land territory owned at the start of the turn containing a factory above level 2.
+		<br>	<b>Special: </b>Can Blitz.
+		<br>
+		<br>	<b>Hvy_Armour </b>
+		<br>	<b>Cost: 38 </b>
+		<br>	<b>Attack: 7 </b>(-1 in Mountains & Jungles.  -2 in Arctic.  +1 in Desert.  +1 with General.  -1 vs Fort, Fortress, or Bunker.)
+		<br>	<b>Defend: 7 </b>(-1 in Jungle.  -2 in Mountains & Arctic.  +1 in Desert.  +1 with General.)
+		<br>	<b>Move: 2 </b>
+		<br>	<b>Transport Cost: 6 </b>- On sea by transport ship.  Cannot be transported by air.
+		<br>	<b>Placement: </b>Any land territory owned at the start of the turn containing a factory level 5.
+		<br>	<b>Special: </b>Can Blitz.
+		<br>	<b>Hits: 2 </b>
+		<br>
+		<br>	<b>AAGun </b>
+		<br>	<b>Cost: 11 </b>
+		<br>	<b>Attack: 0 </b>
+		<br>	<b>Defend: 0 </b>(Capturable)
+		<br>	<b>Move: 1 </b>(Can only move during non-combat movement)
+		<br>	<b>Transport Cost: 3 </b>- On sea by transport ship.  Cannot be transported by air.
+		<br>	<b>Placement: </b>Any land territory owned at the start of the turn containing a factory of any level.
+		<br>	<b>Special: </b>Fires at attacking aircraft, hitting on any roll of 2.  Each AAGun may fire up to 3 times, but only once per attacking unit.  (e.g. 2 AAGuns vs 1 air unit = 1 die roll, 2 AAGuns vs 2 air units = 2 die rolls, 2 AAGuns vs 4 air units = 4 die rolls, 2 AAGuns vs 10 air units = 6 die rolls(max))
+		<br>	Can be strategic bombed.
+		<br>
+		<br>	<b>General </b>
+		<br>	<b>Cost: 94 </b>
+		<br>	<b>Attack: 12 </b>
+		<br>	<b>Defend: 12 </b>
+		<br>	<b>Move: 2 </b>
+		<br>	<b>Transport Cost: 1 </b>- On sea by transport ship.  Can be transported by air by helicopter or transport plane.
+		<br>	<b>Placement: </b>Any land territory owned at the start of the turn containing a city of any level.
+		<br>	<b>Special: </b>Gives +1 attack, +1 defense to all accompanying land units.
+		<br>
+		<br>	<b>Air Units</b>
+		<br>	All air units must finish their movement (by the end of the non-combat movement phase) in territory that was friendly owned at the start of your turn.  If an air unit can use aircraft carriers, it can finish movement in a sea zone containing a friendly owned carrier that has enough spare capacity to hold it.
+		<br>	
+		<br>	<b>Zeppelin </b>
+		<br>	<b>Cost: 6 </b>
+		<br>	<b>Attack (Sea Zone): 1 </b>
+		<br>	<b>Defend (Sea Zone): 1 </b>
+		<br>	<b>Attack (Land Territory): 1 </b>(-1 in Jungle, -2 in Arctic.)
+		<br>	<b>Defend (Land Territory): 1 </b>(-1 in Jungle, -2 in Arctic.)
+		<br>	<b>Attack (Air): 1 </b>
+		<br>	<b>Defend (Air): 1 </b>
+		<br>	<b>Move: 4 </b>(Does not receive any movement benefit from airfields or carriers).
+		<br>	<b>Carrier Cost: 99 </b>- (Cannot use carriers)
+		<br>	<b>Placement: </b>Any land territory owned at the start of the turn containing a factory of any level.
+		<br>	<b>Special: </b>Can escort & intercept, can scramble 1 space.
+		<br>	
+		<br>	<b>Biplane </b>
+		<br>	<b>Cost: 11 </b>
+		<br>	<b>Attack (Sea Zone): 1 </b>
+		<br>	<b>Defend (Sea Zone): 1 </b>
+		<br>	<b>Attack (Land Territory): 2 </b>(-1 in Jungle, -2 in Arctic.)
+		<br>	<b>Defend (Land Territory): 2 </b>(-1 in Jungle, -2 in Arctic.)
+		<br>	<b>Attack (Air): 2 </b>
+		<br>	<b>Defend (Air): 2 </b>
+		<br>	<b>Move: 4 </b>(Does not receive any movement benefit from airfields or carriers).
+		<br>	<b>Carrier Cost: 2 </b>
+		<br>	<b>Placement: </b>Any land territory owned at the start of the turn containing a factory of any level.
+		<br>	<b>Special: </b>Can escort & intercept, can scramble 1 space.
+		<br>	
+		<br>	<b>Fighter </b>
+		<br>	<b>Cost: 25 </b>
+		<br>	<b>Attack (Sea Zone): 2 </b>
+		<br>	<b>Defend (Sea Zone): 2 </b>
+		<br>	<b>Attack (Land Territory): 5 </b>(-1 in Jungle, -2 in Arctic.)
+		<br>	<b>Defend (Land Territory): 5 </b>(-1 in Jungle, -2 in Arctic.)
+		<br>	<b>Attack (Air): 6 </b>
+		<br>	<b>Defend (Air): 6 </b>
+		<br>	<b>Move: 2 </b>(+2 if beginning movement with airfield or carrier).
+		<br>	<b>Carrier Cost: 2 </b>
+		<br>	<b>Placement: </b>Any land territory owned at the start of the turn containing a factory of level 2 or more.
+		<br>	<b>Special: </b>Can escort & intercept, can scramble 1 space.
+		<br>
+		<br>	<b>Helicopter</b>
+		<br>	<b>Cost: 23 </b>
+		<br>	<b>Attack (Sea Zone): 1 </b>
+		<br>	<b>Defend (Sea Zone): 1 </b>
+		<br>	<b>Attack (Land Territory): 3 </b>(+1 in Jungle, -1 in Arctic.)
+		<br>	<b>Defend (Land Territory): 3 </b>(+1 in Jungle, -1 in Arctic.)
+		<br>	<b>Attack (Air): 3 </b>
+		<br>	<b>Defend (Air): 3 </b>
+		<br>	<b>Move: 4 </b>(Does not receive any movement benefit from airfields or carriers).
+		<br>	<b>Carrier Cost: 2 </b>
+		<br>	<b>Placement: </b>Any land territory owned at the start of the turn containing a factory of level 2 or more.
+		<br>	<b>Special: </b>Can escort & intercept, can scramble 1 space.  Has air transport capacity of 3.  Drops depth charges during AA phase, at a strength of 2, in an attempt to hit any enemy subs.
+		<br>		
+		<br>	<b>Dive_Bomber </b>
+		<br>	<b>Cost: 30 </b>
+		<br>	<b>Attack (Sea Zone): 6 </b>
+		<br>	<b>Defend (Sea Zone): 5 </b>
+		<br>	<b>Attack (Land Territory): 4 </b>(-1 in Jungle, -2 in Arctic.)
+		<br>	<b>Defend (Land Territory): 3 </b>(-1 in Jungle, -2 in Arctic.)
+		<br>	<b>Attack (Air): 3 </b>
+		<br>	<b>Defend (Air): 3 </b>
+		<br>	<b>Move: 2 </b>(+2 if beginning movement with airfield or carrier).
+		<br>	<b>Carrier Cost: 2 </b>
+		<br>	<b>Placement: </b>Any land territory owned at the start of the turn containing a factory of level 2 or more.
+		<br>	<b>Special: </b>Can escort & intercept, can scramble 1 space.
+		<br>	
+		<br>	<b>Tactical_Bomber </b>
+		<br>	<b>Cost: 31 </b>
+		<br>	<b>Attack (Sea Zone): 2
+		<br>	<b>Defend (Sea Zone): 3
+		<br>	<b>Attack (Land Territory): 6 </b>(-1 in Jungle, -1 in Arctic.)
+		<br>	<b>Defend (Land Territory): 7 </b>(-1 in Jungle, -1 in Arctic.)
+		<br>	<b>Attack (Air): 3
+		<br>	<b>Defend (Air): 3
+		<br>	<b>Move: 2 </b>(+2 if beginning movement with airfield or carrier).
+		<br>	<b>Carrier Cost: 99 </b>- (Cannot use carriers)
+		<br>	<b>Placement: </b>Any land territory owned at the start of the turn containing a factory of level 2 or more.
+		<br>	<b>Special: </b>Can blockade 1 PU.
+		<br>
+		<br>	<b>Med_Bomber </b>
+		<br>	<b>Cost: 35 </b>
+		<br>	<b>Attack (Sea Zone): 3 </b>
+		<br>	<b>Defend (Sea Zone): 1 </b>
+		<br>	<b>Attack (Land Territory): 6 </b>(-1 in Jungle, -2 in Arctic.)
+		<br>	<b>Defend (Land Territory): 2 </b>(-1 in Jungle, -1 in Arctic.)
+		<br>	<b>Attack (Air): 3 </b>
+		<br>	<b>Defend (Air): 3 </b>
+		<br>	<b>Move: 4 </b>(+2 if beginning movement with airfield).
+		<br>	<b>Carrier Cost: 99 </b>- (Cannot use carriers)
+		<br>	<b>Placement: </b>Any land territory owned at the start of the turn containing a factory of level 4 or more.
+		<br>	<b>Special: </b>Can blockade 2 PU.  Can strategic bomb, causing 1d5+1 of damage.
+		<br>
+		<br>	<b>Bomber </b>
+		<br>	<b>Cost: 45 </b>
+		<br>	<b>Attack (Sea Zone): 4 </b>
+		<br>	<b>Defend (Sea Zone): 1 </b>
+		<br>	<b>Attack (Land Territory): 7 </b>(-1 in Jungle, -2 in Arctic.)
+		<br>	<b>Defend (Land Territory): 3 </b>(-1 in Jungle, -1 in Arctic.)
+		<br>	<b>Attack (Air): 4 </b>
+		<br>	<b>Defend (Air): 4 </b>
+		<br>	<b>Move: 4 </b>(+2 if beginning movement with airfield).
+		<br>	<b>Carrier Cost: 99 </b>- (Cannot use carriers)
+		<br>	<b>Placement: </b>Any land territory owned at the start of the turn containing a factory of level 5.
+		<br>	<b>Special: </b>Can blockade 2 PU.  Can strategic bomb, causing 1d6+2 of damage.
+		<br>	<b>Hits: 2 </b>
+		<br>
+		<br>	<b>Transport_Plane</b>
+		<br>	<b>Cost: 28 </b>
+		<br>	<b>Attack (Sea Zone): 0
+		<br>	<b>Defend (Sea Zone): 0
+		<br>	<b>Attack (Land Territory): 0 </b>
+		<br>	<b>Defend (Land Territory): 0 </b>
+		<br>	<b>Attack (Air): 0
+		<br>	<b>Defend (Air): 0
+		<br>	<b>Move: 4 </b>(+2 if beginning movement with airfield).
+		<br>	<b>Carrier Cost: 99 </b>- (Cannot use carriers)
+		<br>	<b>Placement: </b>Any land territory owned at the start of the turn containing a factory of level 2 or more.
+		<br>	<b>Special: </b>Has air transport capacity of 7.
+		<br>	
+		<br>	<b>Sea Units</b>
+		<br>	Some ships are built in phases.  Until the ship is finished, the partially finished units cannot move or fight, can be strategic bombed, and can be captured by enemy ships.  During strategic bombing, if a partially finished unit receives 1 more damage than it's stage of completion, it is destroyed. (i.e. a ship at stage 1 will be destroyed when hit 2 times, a ship at stage 2 will be destroyed when hit 3 times.)
+		<br>
+		<br>	<b>PT_Boat </b>
+		<br>	<b>Cost: 10 </b>
+		<br>	<b>Attack: 1 </b>
+		<br>	<b>Defend: 1 </b>
+		<br>	<b>Move: 1 </b>(+1 when starting movement in the same sea zone as an admiral)
+		<br>	<b>Placement: </b>Any sea zone adjacent to both a harbour and a factory of any level owned at the start of your turn.
+		<br>
+		<br>	<b>Frigate </b>
+		<br>	<b>Cost: 15 </b>
+		<br>	<b>Attack: 2 </b>
+		<br>	<b>Defend: 2 </b>
+		<br>	<b>Move: 2 </b>(+1 if beginning movement adjacent to harbour).
+		<br>	<b>Placement: </b>Any sea zone adjacent to both a harbour and a factory of any level owned at the start of your turn.
+		<br>
+		<br>	<b>Destroyer </b>
+		<br>	<b>Cost: 23 </b>
+		<br>	<b>Attack: 3 </b>
+		<br>	<b>Defend: 3 </b>
+		<br>	<b>Move: 2 </b>(+1 if beginning movement adjacent to harbour).
+		<br>	<b>Placement: </b>Any sea zone adjacent to both a harbour and a factory of level 2 or more owned at the start of your turn.
+		<br>	<b>Special: </b>Drops depth charges during AA phase, at a strength of 5, in an attempt to hit any enemy subs.
+		<br>
+		<br>	<b>Lt_Cruiser </b>
+		<br>	<b>Cost: 30 </b>
+		<br>	<b>Attack: 4 </b>
+		<br>	<b>Defend: 4 </b>
+		<br>	<b>Move: 2 </b>(+1 if beginning movement adjacent to harbour).
+		<br>	<b>Placement: </b>Any sea zone adjacent to both a harbour and a factory of level 3 or more owned at the start of your turn.
+		<br>	<b>Special: </b>Can bombard, can blockade 1 PU.  Gives +1 attack, +1 defense to paired Cruiser.
+		<br>
+		<br>	<b>Cruiser </b>
+		<br>	<b>Cost: 40* </b>(Built in 2 phases of 20 PUs each)
+		<br>	<b>Attack: 5 </b>(+1 if paired with Lt_Cruiser)
+		<br>	<b>Defend: 5 </b>(+1 if paired with Lt_Cruiser)
+		<br>	<b>Move: 2 </b>(+1 if beginning movement adjacent to harbour).
+		<br>	<b>Placement: </b>Any sea zone adjacent to both a harbour and a factory of level 3 or more owned at the start of your turn.
+		<br>	<b>Special: </b>Can bombard, can blockade 2 PU.  Gives +1 attack, +1 defense to paired Hvy_Cruiser.
+		<br>	<b>Hits: 2 </b>
+		<br>
+		<br>	<b>Hvy_Cruiser </b>
+		<br>	<b>Cost: 54* </b>(Built in 3 phases of 18 PUs each)
+		<br>	<b>Attack: 6 </b>(+1 if paired with Cruiser)
+		<br>	<b>Defend: 6 </b>(+1 if paired with Cruiser)
+		<br>	<b>Move: 2 </b>(+1 if beginning movement adjacent to harbour).
+		<br>	<b>Placement: </b>Any sea zone adjacent to both a harbour and a factory of level 4 or more owned at the start of your turn.
+		<br>	<b>Special: </b>Can bombard, can blockade 3 PU. Gives +1 attack, +1 defense to paired Battlecruiser.
+		<br>	<b>Hits: 3 </b>
+		<br>
+		<br>	<b>Battlecruiser </b>
+		<br>	<b>Cost: 64* </b>(Built in 4 phases of 16 PUs each)
+		<br>	<b>Attack: 7 </b>(+1 if paired with Hvy_Cruiser)
+		<br>	<b>Defend: 7 </b>(+1 if paired with Hvy_Cruiser)
+		<br>	<b>Move: 2 </b>(+1 if beginning movement adjacent to harbour).
+		<br>	<b>Placement: </b>Any sea zone adjacent to both a harbour and a factory of level 4 or more owned at the start of your turn.
+		<br>	<b>Special: </b>Can bombard, can blockade 3 PU. Gives +1 attack, +1 defense to paired Battleship.
+		<br>	<b>Hits: 4 </b>
+		<br>
+		<br>	<b>Battleship </b>
+		<br>	<b>Cost: 75* </b>(Built in 5 phases of 15 PUs each)
+		<br>	<b>Attack: 8 </b>(+1 if paired with Battlecruiser)
+		<br>	<b>Defend: 8 </b>(+1 if paired with Battlecruiser)
+		<br>	<b>Move: 2 </b>(+1 if beginning movement adjacent to harbour).
+		<br>	<b>Placement: </b>Any sea zone adjacent to both a harbour and a factory of level 5 owned at the start of your turn.
+		<br>	<b>Special: </b>Can bombard, can blockade 3 PU.
+		<br>	<b>Hits: 5 </b>
+		<br>
+		<br>	<b>Carrier </b>
+		<br>	<b>Cost: 48* </b>(Built in 3 phases of 16 PUs each)
+		<br>	<b>Attack: 0 </b>
+		<br>	<b>Defend: 4 </b>
+		<br>	<b>Move: 2 </b>(+1 if beginning movement adjacent to harbour).
+		<br>	<b>Placement: </b>Any sea zone adjacent to both a harbour and a factory of level 5 owned at the start of your turn.
+		<br>	<b>Special: </b>Can blockade 2 PU.  Gives +2 movement to fighters & dive_bombers.  Has a carrier capacity of 13.  
+		<br>	<b>Hits: 2 </b>
+		<br>
+		<br>	<b>Submarine </b>
+		<br>	<b>Cost: 18 </b>
+		<br>	<b>Attack: 4 </b>
+		<br>	<b>Defend: 3 </b>
+		<br>	<b>Move: 2 </b>(+2 if beginning movement adjacent to harbour).
+		<br>	<b>Placement: </b>Any sea zone adjacent to both a harbour and a factory of level 2 or more owned at the start of your turn.
+		<br>	<b>Special: </b>Unless negated by enemy destroyers, cannot be attacked by aircraft, can submerge at the start of a combat round, has surprise-strike (fires before other units with casualties assessed before battle continues), and can move through enemy ships without stopping for combat.
+		<br>
+		<br>	<b>Nuclear_Sub </b>
+		<br>	<b>Cost: 25 </b>
+		<br>	<b>Attack: 3 </b>
+		<br>	<b>Defend: 2 </b>
+		<br>	<b>Move: 3 </b>(+1 if beginning movement adjacent to harbour).
+		<br>	<b>Placement: </b>Any sea zone adjacent to both a harbour and a nuclear facility owned at the start of your turn.
+		<br>	<b>Special: </b>Unless negated by enemy destroyers, cannot be attacked by aircraft, can submerge at the start of a combat round, has surprise-strike (fires before other units with casualties assessed before battle continues), and can move through enemy ships without stopping for combat.  Has a carrier capacity of 1, enabling it to carry a nuclear_missle.
+		<br>
+		<br>	<b>Transport </b>
+		<br>	<b>Cost: 19 </b>
+		<br>	<b>Attack: 0 </b>
+		<br>	<b>Defend: 0 </b>
+		<br>	<b>Move: 2 </b>(+1 if beginning movement adjacent to harbour).
+		<br>	<b>Placement: </b>Any sea zone adjacent to both a harbour and a factory of any level owned at the start of your turn.
+		<br>	<b>Special: </b>Has a transport capacity of 9.
+		<br>
+		<br>	<b>Merchant_Ship </b>
+		<br>	<b>Cost: 20 </b>
+		<br>	<b>Attack: 0 </b>
+		<br>	<b>Defend: 0 </b>
+		<br>	<b>Move: 2 </b>(+1 if beginning movement adjacent to harbour).
+		<br>	<b>Placement: </b>Any sea zone adjacent to both a harbour and a factory of any level owned at the start of your turn.
+		<br>	<b>Special: </b>Has a transport capacity of 2.  Every sea zone occupied by at least 1 of your merchant ships will produce at least 2 PUs (3 for Gilcrest, Loch_Island, Maflemia, Shevik, Archenland, Terrabania, and Portsmouth) per turn.
+		<br>
+		<br>	<b>Admiral </b>
+		<br>	<b>Cost: 94 </b>
+		<br>	<b>Attack: 12 </b>
+		<br>	<b>Defend: 12 </b>
+		<br>	<b>Move: 2 </b>(+1 if beginning movement adjacent to harbour).
+		<br>	<b>Placement: </b>Any sea zone adjacent to both a harbour and a factory of level 5 owned at the start of your turn.
+		<br>	<b>Special: </b>Gives +1 attack, +1 defense to all accompanying sea units.  Gives +1 movement to PT_Boats.
+		<br>
+		<br>	<b>Structures</b>
+		<br>	All structures have built-in AA of 1/12 that only fires at aircraft specifically doing strategic bombing on that unit.
+		<br>
+		<br>	<b>Airfield </b>
+		<br>	<b>PU Cost: 38 </b>
+		<br>	<b>Population Cost: 10 </b>
+		<br>	<b>Max Damage: 6 </b>(Unit is destroyed).
+		<br>	<b>Max Operational Damage: 3 </b>(Unit can no longer fulfill it's special functions).
+		<br>	<b>Placement: </b>Any land territory owned at the start of your turn.
+		<br>	<b>Special 1: </b>Gives +2 movement to fighters, dive_bombers, tactical_bmbers, med_bombers, bombers, & transport_planes.  
+		<br>	<b>Special 2: </b>Allows scrambling by appropriate aircraft.  
+		<br>	<b>Special 3: </b>Repairs bombers. 
+		<br>	<b>Special 4: </b>When researched, can make rocket attacks causing 1d6 damage.
+		<br>
+		<br>	<b>Harbour </b>
+		<br>	<b>PU Cost: 38 </b>
+		<br>	<b>Population Cost: 20 </b>
+		<br>	<b>Max Damage: 6 </b>(Unit is destroyed).
+		<br>	<b>Max Operational Damage: 3 </b>(Unit can no longer fulfill it's special functions).
+		<br>	<b>Placement: </b>Any land territory owned at the start of your turn.
+		<br>	<b>Special 1: </b>Gives +1 movement to Transports, Destroyers, Lt_Cruisers, Cruisers, Hvy_Cruisers, Battlecruisers, Battleships, Carriers, Admirals, Nuclear_Subs, & Merchant_Ships.  Gives +2 movement to Submarines.
+		<br>	<b>Special 2: </b>Repairs Cruisers, Hvy_Cruisers, Battlecruisers, Battleships, & Carriers. 
+		<br>
+		<br>	<b>Fort </b>
+		<br>	<b>PU Cost: 25 </b>
+		<br>	<b>Population Cost: 10 </b>
+		<br>	<b>Defense: 6 </b>
+		<br>	<b>Max Damage: 4 </b>(Unit is destroyed).  (With less damage, the unit has a partial loss of it's special abilities).
+		<br>	<b>Placement: </b>Any land territory owned at the start of your turn.
+		<br>	<b>Special 1: </b>Takes -1 attack from up to 6 enemy Militia, Infantry, Marines, Lt_Cavalry, Cavalry, Hvy_Cavalry, Halftrack, Mech_Infantry, Mobile_Infantry, Lt_Armour, Armour, & Hvy_Armour.
+		<br>	<b>Special 2: </b>Gives +1 defense to up to 6 allied Militia, Infantry, Marines, Artillery, & Hvy_Artillery.  Gives +1 attack to up to 10 enemy artillery & hvy_artillery.
+		<br>	<b>Hits: 4 </b>
+		<br>
+		<br>	<b>Forttress </b>
+		<br>	<b>PU Cost: 31 </b>
+		<br>	<b>Population Cost: 20 </b>
+		<br>	<b>Defense: 8 </b>
+		<br>	<b>Max Damage: 6 </b>(Unit is destroyed).  (With less damage, the unit has a partial loss of it's special abilities).
+		<br>	<b>Placement: </b>Any land territory owned at the start of your turn containing a fort (consumes fort).
+		<br>	<b>Special 1: </b>Takes -1 attack from up to 12 enemy Militia, Infantry, Marines, Lt_Cavalry, Cavalry, Hvy_Cavalry, Halftrack, Mech_Infantry, Mobile_Infantry, Lt_Armour, Armour, & Hvy_Armour.
+		<br>	<b>Special 2: </b>Gives +1 defense to up to 12 allied Militia, Infantry, Marines, Artillery, & Hvy_Artillery.  Gives +1 attack to up to 10 enemy artillery & hvy_artillery.
+		<br>	<b>Hits: 6 </b>
+		<br>
+		<br>	<b>Bunker</b>
+		<br>	<b>PU Cost: 38 </b>
+		<br>	<b>Population Cost: 30 </b>
+		<br>	<b>Defense: 10 </b>
+		<br>	<b>Max Damage: 8 </b>(Unit is destroyed).  (With less damage, the unit has a partial loss of it's special abilities).
+		<br>	<b>Placement: </b>Any land territory owned at the start of your turn containing a fortress (consumes fortress).
+		<br>	<b>Special 1: </b>Takes -1 attack from up to 18 enemy Militia, Infantry, Marines, Lt_Cavalry, Cavalry, Hvy_Cavalry, Halftrack, Mech_Infantry, Mobile_Infantry, Lt_Armour, Armour, & Hvy_Armour.
+		<br>	<b>Special 2: </b>Gives +1 defense to up to 18 allied Militia, Infantry, Marines, Artillery, & Hvy_Artillery.  Gives +1 attack to up to 10 enemy artillery & hvy_artillery.
+		<br>	<b>Hits: 8 </b>
+		<br>
+		<br>	<b>City1</b>
+		<br>	<b>PU Cost: 13 </b>
+		<br>	<b>Population Cost: 10 </b>
+		<br>	<b>Max Damage: 3 </b>(Unit is destroyed).  (With less damage, the unit has a partial loss of it's special abilities).
+		<br>	<b>Placement: </b>Any land territory owned at the start of your turn with a PU value of 1 or more.
+		<br>	<b>Special 1: </b>Allows the placement of up to 3 infantry, marine, or lt_cavalry units per turn.
+		<br>	<b>Special 2: </b>Produces 1 population unit per turn.
+		<br>
+		<br>	<b>City2</b>
+		<br>	<b>PU Cost: 19 </b>
+		<br>	<b>Population Cost: 15 </b>
+		<br>	<b>Max Damage: 6 </b>(Unit is destroyed).  (With less damage, the unit has a partial loss of it's special abilities).
+		<br>	<b>Placement: </b>Any land territory owned at the start of your turn with a PU value of 1 or more which contains a city1 (consumes city1).
+		<br>	<b>Special 1: </b>Allows the placement of up to 6 infantry, marine, lt_cavalry, or cavalry units per turn.
+		<br>	<b>Special 2: </b>Produces 2 population unit & 1 PU per turn.
+		<br>	<b>Special 3: </b>When captured, reduces to a city1 and approximately 2/3 of the population originally consumed on placement.
+		<br>
+		<br>	<b>City3</b>
+		<br>	<b>PU Cost: 25 </b>
+		<br>	<b>Population Cost: 20 </b>
+		<br>	<b>Max Damage: 9 </b>(Unit is destroyed).  (With less damage, the unit has a partial loss of it's special abilities).
+		<br>	<b>Placement: </b>Any land territory owned at the start of your turn with a PU value of 2 or more which contains a city2 (consumes city2).
+		<br>	<b>Special 1: </b>Allows the placement of up to 9 infantry, marine, lt_cavalry, cavalry, or hvy_cavalry units per turn.
+		<br>	<b>Special 2: </b>Produces 3 population unit & 2 PU per turn.
+		<br>	<b>Special 3: </b>When captured, reduces to a city2 and approximately 2/3 of the population originally consumed on placement.
+		<br>
+		<br>	<b>City4</b>
+		<br>	<b>PU Cost: 31 </b>
+		<br>	<b>Population Cost: 25 </b>
+		<br>	<b>Max Damage: 12 </b>(Unit is destroyed).  (With less damage, the unit has a partial loss of it's special abilities).
+		<br>	<b>Placement: </b>Any land territory owned at the start of your turn with a PU value of 3 or more which contains a city3 (consumes city3).
+		<br>	<b>Special 1: </b>Allows the placement of up to 12 infantry, marine, lt_cavalry, cavalry, or hvy_cavalry units per turn.
+		<br>	<b>Special 2: </b>Produces 4 population unit & 3 PU per turn.
+		<br>	<b>Special 3: </b>When captured, reduces to a city3 and approximately 2/3 of the population originally consumed on placement.
+		<br>
+		<br>	<b>City5</b>
+		<br>	<b>PU Cost: 38 </b>
+		<br>	<b>Population Cost: 30 </b>
+		<br>	<b>Max Damage: 15 </b>(Unit is destroyed).  (With less damage, the unit has a partial loss of it's special abilities).
+		<br>	<b>Placement: </b>Any land territory owned at the start of your turn with a PU value of 4 or more which contains a city4 (consumes city4).
+		<br>	<b>Special 1: </b>Allows the placement of up to 15 infantry, marine, lt_cavalry, cavalry, hvy_cavalry, or general units per turn.
+		<br>	<b>Special 2: </b>Produces 5 population unit & 4 PU per turn.
+		<br>	<b>Special 3: </b>When captured, reduces to a city4 and approximately 2/3 of the population originally consumed on placement.
+		<br>
+		<br>	<b>Factory1</b>
+		<br>	<b>PU Cost: 13 </b>
+		<br>	<b>Population Cost: 10 </b>
+		<br>	<b>Max Damage: 6 </b>(Unit is destroyed).  (With less damage, the unit has a partial loss of it's special abilities).
+		<br>	<b>Placement: </b>Any land territory owned at the start of your turn which contains a city of any level.
+		<br>	<b>Production: </b>Up to 6 units per turn.  The types that can be produced are:
+		<br>	<b>  Land: </b>Halftrack, Mech_Infantry, Mobile_Infantry, Artillery, & AAGun
+		<br>	<b>  Air:  </b>(Requires Airfield) Zeppelin & Biplane.
+		<br>	<b>  Sea:  </b>(Requires Harbour) PT_Boat, Frigate, Transport, & Merchant_Ship
+		<br>
+		<br>	<b>Factory2</b>
+		<br>	<b>PU Cost: 19 </b>
+		<br>	<b>Population Cost: 15 </b>
+		<br>	<b>Max Damage: 9 </b>(Unit is destroyed).  (With less damage, the unit has a partial loss of it's special abilities).
+		<br>	<b>Placement: </b>Any land territory owned at the start of your turn with a PU value of 1 or more which contains a city of level 2 or more and a factory1 (consumes factory1).
+		<br>	<b>Production: </b>Up to 9 units per turn.  The types that can be produced include all of those listed for previous factory levels, plus:
+		<br>	<b>  Land: </b>Heavy_Artillery & Lt_Armour
+		<br>	<b>  Air:  </b>(Requires Airfield) Fighter, Helicopter, Dive_Bomber, Tactical_Bomber, Transport_Plane.
+		<br>	<b>  Sea:  </b>(Requires Harbour) Destroyer & Submarine
+		<br>	<b>Special: </b> When captured, is reduced to factory1 and approximately 2/3 of the population originally consumed on placement.
+		<br>
+		<br>	<b>Factory3</b>
+		<br>	<b>PU Cost: 25 </b>
+		<br>	<b>Population Cost: 20 </b>
+		<br>	<b>Max Damage: 12 </b>(Unit is destroyed).  (With less damage, the unit has a partial loss of it's special abilities).
+		<br>	<b>Placement: </b>Any land territory owned at the start of your turn with a PU value of 2 or more which contains a city of level 3 or more and a factory2 (consumes factory2).
+		<br>	<b>Production: </b>Up to 12 units per turn.  The types that can be produced include all of those listed for previous factory levels, plus:
+		<br>	<b>  Land: </b>Armour
+		<br>	<b>  Air:  </b>(Requires Airfield)
+		<br>	<b>  Sea:  </b>(Requires Harbour) Lt_Cruiser & Cruiser
+		<br>	<b>Special: </b> When captured, is reduced to factory2 and approximately 2/3 of the population originally consumed on placement.  Repairs hvy_armour.
+		<br>
+		<br>	<b>Factory4</b>
+		<br>	<b>PU Cost: 31 </b>
+		<br>	<b>Population Cost: 25 </b>
+		<br>	<b>Max Damage: 15 </b>(Unit is destroyed).  (With less damage, the unit has a partial loss of it's special abilities).
+		<br>	<b>Placement: </b>Any land territory owned at the start of your turn with a PU value of 3 or more which contains a city of level 4 or more and a factory3 (consumes factory3).
+		<br>	<b>Production: </b>Up to 15 units per turn.  The types that can be produced include all of those listed for previous factory levels, plus:
+		<br>	<b>  Land: </b>
+		<br>	<b>  Air:  </b>(Requires Airfield) Med_Bomber
+		<br>	<b>  Sea:  </b>(Requires Harbour) Hvy_Cruiser & Battlecruiser
+		<br>	<b>Special: </b> When captured, is reduced to factory3 and approximately 2/3 of the population originally consumed on placement.  Repairs hvy_armour.
+		<br>
+		<br>	<b>Factory5</b>
+		<br>	<b>PU Cost: 38 </b>
+		<br>	<b>Population Cost: 30 </b>
+		<br>	<b>Max Damage: 18 </b>(Unit is destroyed).  (With less damage, the unit has a partial loss of it's special abilities).
+		<br>	<b>Placement: </b>Any land territory owned at the start of your turn with a PU value of 4 or more which contains a city of level 5 and a factory4 (consumes factory4).
+		<br>	<b>Production: </b>Up to 18 units per turn.  The types that can be produced include all of those listed for previous factory levels, plus:
+		<br>	<b>  Land: </b>Hvy_Armour
+		<br>	<b>  Air:  </b>(Requires Airfield) Bomber
+		<br>	<b>  Sea:  </b>(Requires Harbour) Battleship, Carrier, & Admiral
+		<br>	<b>Special: </b> When captured, is reduced to factory4 and approximately 2/3 of the population originally consumed on placement.  Repairs hvy_armour.
+		<br>
+		<br>	<b>Nuclear_Facility</b>
+		<br>	<b>PU Cost: 250 </b>
+		<br>	<b>Population Cost: 50 </b>
+		<br>	<b>Max Damage: 3 </b>(Unit is destroyed).  (With less damage, the unit has a partial loss of it's special abilities).
+		<br>	<b>Placement: </b>Any land territory owned at the start of your turn with a PU value of 5 or more which contains a factory5.
+		<br>	<b>Production: </b>Allows the production of nuclear_missle, and with harbour, nuclear_sub.
+		<br>	<b>Special: </b> Creates 5 PUs & 5 Population per turn.
+		<br>	<b>Special: </b> Is destroyed on capture, replacing approximately 2/3 of the population originally consumed on placement.
+		<br>
+		<br>	<b>Additional Game Notes: </b>
+		<br>
+		<br>	<b>Dice:</b>
+		<br>	1. 	Twelve sided dice are used for all combat die rolls, and unit battle strengths have been adjusted and scaled accordingly.  A number of new units have been added, taking advantage of 
+		<br>		the greater variety of battle strengths available.  As of this version, all units can be built immediately but the intention is for later versions to make more advanced units
+		<br>		dependent upon technology research, and stopping the production of obsolete units.
+		<br>
+		<br>	<b>Starting Positions:</b>
+		<br>	2.  There are 18 playable countries, each starting with one capital. Every capital territory produces 15 PUs per turn.  Every player begins the game with 10 infantry, 15 population,
+		<br>		a level 5 city, a level 5 factory, 5 bunkers, an airbase, and a harbour in their capital, and in the sea adjacent 1 Destroyer and 1 Transport.  In addition, 10 infantry are in each colony.
+		<br>		Every player starts with 20 PUs in the bank.  Although every starting position is equal in all of these respects, some are more challenging to play due to proximity to other players,
+		<br>		geographic advantage, and better access to the sea (although every starting position and colony is adjacent to the sea).
+		<br>
+		<br>		The loss of a capital is serious, but no longer catastrophic (players still receive their income and can produce units if they have cities and/or factories elsewhere).  However,
+		<br>		capitals are the only locations where population units can be transferred and/or sold, and, of course, in the early stages of the game they are critical to production and growth.
+		<br>
+		<br>	<b>Convoy Zones & Merchant Ships:</b>
+		<br>	3. 	Each player has a convoy zone located as close as possible to their capital which earns them 15 PUs per turn unless the interdicted by another player's navy.  Interdicting (moving war ships
+		<br>		into the space stops it's production (the interdicting player does NOT receive the income) until the interdiction is removed by the owning (or allied) player's navy re-occupying the zone.
+		<br>
+		<br>		Players can build merchant ships which can expand their income.  Each sea zone occupied by at least one merchant ship will provide income for the occupying player(s).  Because some
+		<br>		players have easier access to the sea, the income produced is different for some countries.  Merchant ships have no battle strength and will be destroyed if undefended in a battle.
+		<br>		Merchant ships also have 2 transport capability, which allows them to transport population, which have a transport cost of 1, and marines which have a transport cost of 2.
+		<br>
+		<br>				Archenland, Loch Island, Maflemia, Narsia, Nylita, and Sharn:		3 PUs per zone
+		<br>				All Others:															2 PUs per zone
+		<br>
+		<br>	<b>Political Relationships:</b>
+		<br>	4.	All countries start the game neutral to each other.  There are 9 relationships possible in the game: Allied, Aligned, Friendly, Cooperative, Uncommitted, Uncooperative, Unfriendly, Hostile, and War.
+		<br>		Relationships can be changed one step up or down if they have existed long enough (One turn for uncommitted, two turns for cooperative or uncooperative, three turns for friendly or unfriendly, and four
+		<br>		turns for aligned or hostile).  Changing a relationship up requires acceptance of the other player, but changing down a step does not.  If a relationship becomes that of either allied
+		<br>		or war, it is permanent for the rest of the game. Relationships better than uncommitted offer progressive benefits, ranging from using each other's canals, overflying each other'same
+		<br>		territories, open borders, and exchange of population.  Hostile relationships are the same as war except they are not permanent, and similarly aligned relationships are like being allied.
+		<br>
+		<br>	<b>Neutral Territories:</b>
+		<br>	5.	At the start of the game, most territories are neutral, but contain a defensive garrison in ratio to their PU value.  They can be freely attacked by any player at any time.
+		<br>
+		<br>	<b>Transport</b>
+		<br>	6.	Transport ships can carry 9 tons (more than most versions of TripleA games), and carriers can hold more air units as well.  
+		<br>
+		<br>	<b>Air Units Range</b>
+		<br>	7.	Most air units have very short ranges until staged on carriers or with airfields.  
+		<br>
+		<br>	<b>Leadership</b>
+		<br>	8.	Generals and admirals give a +1 bonus to all units they accompany.
+		<br>
+		<br>	<b>Paratroopers</b>
+		<br>	9.	All countries start with paratrooper technology researched.  Helicopters and transport planes can carry infantry or marines.
+		<br>
+		<br>	<b>Nuclear Missles</b>
+		<br> 	10.	Nuclear missles have been added that destroy a percentage of all units in the same territory.  They are expensive as they are only meant for countering huge unit stacks.  They have a range of 4 and can suicide and kamikaze.  They can be carried on nuclear subs and/or carriers.
+		<br>
+		<br>	<b>Turn Sequence</b>
+		<br> 	11.	Each player's turn sequence begins with collecting income (the display window says "end of turn" but it is actually the beginning), followed by user actions, political actions, tech development,
+		<br>		purchasing units, combat movement, non-combat movement, and unit placement.
+		<br>
